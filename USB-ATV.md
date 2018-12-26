@@ -4,3 +4,5 @@ Gadmei UTV330+|WinXP SP3|OK|OK|OK|TVHome3.Potplayer
 Gadmei UTV330+|Win10 Ent|OK|No|No|TVHome3.Potplayer
 Gadmei UTV330+|Win8 pro|OK|No|No|TVHome3.Potplayer
 Gadmei UTV330+|Ubuntu 16.04|OK|No|No|tvtime
+Gadmei UTV330+|Ubuntu 14.04|No|No|No|tvtime
+
