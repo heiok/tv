@@ -9,4 +9,4 @@ Gadmei UTV330+|Ubuntu 14.04|No|No|No|tvtime
 1. validate audio device name with audacity;
 2. v4l2-ctl -l -d /dev/video1;
 3. v4l2-ctl -c mute=0 -d /dev/video1;
-4. sudo ffmpeg -r 30000/1001 -f v4l2 -i /dev/video1 -f alsa -ac 2 -ar 48000 -i hw:2,0 -f mpegts -c:v mpeg2video -b:v 8000k -filter:v yadif=0:\-\1:0 -c:a ac3 -b:a 224k -y tvb.mpg
+4. sudo ffmpeg -r 30000/1001 -f v4l2 -i /dev/video1 -f alsa -ac 2 -ar 48000 -i hw:2,0 -f mpegts -c:v mpeg2video -b:v 8000k -filter:v yadif=0:\-1:0 -c:a ac3 -b:a 224k -y tvb.mpg
