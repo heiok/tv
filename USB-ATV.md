@@ -10,3 +10,4 @@ Gadmei UTV330+|Ubuntu 14.04|No|No|No|tvtime
 2. v4l2-ctl -l -d /dev/video1;
 3. v4l2-ctl -c mute=0 -d /dev/video1;
 4. sudo ffmpeg -f v4l2 -i /dev/video1 -thread_queue_size 4096 -f alsa -thread_queue_size 4096 -i hw:2 -f mpegts -c:v mpeg2video -c:a mp3 -y -threads 8 23.mpg -async 1 -vsync 1
+5. use tvheadend with pipe mux no sound : pipe:///usr/bin/ffmpeg -r 25 -f v4l2 -i /dev/video1 -f mpegts -c:v mpeg2video pipe:1
